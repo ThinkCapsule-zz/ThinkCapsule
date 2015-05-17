@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ThinkCapsule Company Website - Basic Prototype</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+       <!-- Google Maps API -->
+                    <script>
+                    var map;
+                    function initialize() {
+                      var mapOptions = {
+                        zoom: 12,
+                        center: new google.maps.LatLng(43.7, -79.4)
+                      };
+                      map = new google.maps.Map(document.getElementById('map-canvas'),
+                          mapOptions);
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', initialize);
+                    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src=" " id="logo" alt="logo goes here">
+                <a class="navbar-brand" href="#page-top" id="company_name">ThinkCapsule</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">ABOUT US</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#work">WORK</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#team">TEAM</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="#careers">CAREERS</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 section_title">
+                <br>
+                <br>
+                    <h1> Landing page stuff goes here ==> empty right now </h1>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+            <div class="row">
+                <div class="col-lg-12 text-center section_title">
+                    <h2>ABOUT US</h2>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-lg-12 text-center">
+                <br>
+                <br>
+                <br>
+                    <p> Random words about us </p>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="work">
+            <div class="row">
+                <div class="col-lg-12 text-center section_title">
+                    <h2>OUR WORK</h2>
+                </div>
+            </div>
+            <div class="row">
+            <!-- project image-->
+                <div class="success">
+                    <div class="col-lg-6 text-center">
+                        <img class="img-rounded" src="img/portfolio/cabin.png" style="width: 8em; height: 6em;" alt="project-image">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3> PROJECT NAME </h3>
+                        <hr style="width: 50%; float: left;">
+                        <br>
+                        <br>
+                        <br>
+                        <p> Description of project </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+       <!-- Team Section -->
+    <section id="team">
+            <div class="row">
+                <div class="col-lg-12 text-center section_title">
+                    <h2>TEAM</h2>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img style="margin: 5em;" class="img-rounded" src="img/profile.png" alt="dude's pic">
+                    <p> Alan Hsu <br> Head of Design and Engineering </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img style="margin: 5em;" class="img-rounded" src="img/profile.png" alt="dude's pic">
+                    <p> Alan Hsu <br> Head of Design and Engineering </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img style="margin: 5em;" class="img-rounded" src="img/profile.png" alt="dude's pic">
+                    <p> Alan Hsu <br> Head of Design and Engineering </p>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img style="margin: 5em;" class="img-rounded" src="img/profile.png" alt="dude's pic">
+                    <p> Alan Hsu <br> Head of Design and Engineering </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img style="margin: 5em;" class="img-rounded" src="img/profile.png" alt="dude's pic">
+                    <p> Alan Hsu <br> Head of Design and Engineering </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img style="margin: 5em;" class="img-rounded" src="img/profile.png" alt="dude's pic">
+                    <p> Alan Hsu <br> Head of Design and Engineering </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+            <div class="row">
+                <div class="col-lg-12 text-center section_title">
+                    <h2>CONTACT US</h2>
+                </div>
+            </div>
+                    <!-- google maps -->
+                    <div id='map-canvas'>
+                    </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>ThinkCapsule</p>
+                </div>
+                 <div class="col-lg-6">
+                    <p> Something Street, <br> Toronto, Ontario <br> POSTCODE </p>
+                </div>
+            </div>
+
+    </section>
+
+    <!--Careers Section -->
+     <section id="careers">
+            <div class="row">
+                <div class="col-lg-12 text-center section_title">
+                    <h2>CAREERS</h2>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <p>ThinkCapsule</p>
+                    <br>
+                    <p> At ThinkCapsule...Contact HR department </p>
+                </div>
+                <div class="col-lg-6">
+                    <br>
+                    <br>
+                    <p> hr@thinkcapsule.com </p>
+                </div>
+            </div>           
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; ThinkCapsule 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>
