@@ -36,6 +36,10 @@ h6 {
     font-weight: 700;
 }
 
+h2 {
+    padding-left: 5em;
+}
+
 
 header {
     text-align: center;
@@ -67,8 +71,11 @@ header .intro-text .skills {
 }
 
 .section_title {
+    color: #fff;
     padding: 4em;
-    background-color: #2ecc71;
+    background-color: #f1c40f;
+    border-color: #333;
+    border-width: 1em;
 }
 
 @media(min-width:768px) {
@@ -88,7 +95,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 20px 0;
+        padding: 5px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -102,11 +109,11 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -367,7 +374,10 @@ footer .footer-below {
 
 #map-canvas {
 
-    height: 15em;
+    height: 30em;
+    width: 40em;
+    left: 10%;
+    top: 20%;
     margin: 1px;
     padding: 0px
 
