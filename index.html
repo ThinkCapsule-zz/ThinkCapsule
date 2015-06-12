@@ -37,12 +37,12 @@
                     function initialize() {
                       var mapOptions = {
                         zoom: 12,
-                        center: new google.maps.LatLng(43.7, -79.4)
+                        center: new google.maps.LatLng(43.7, -79.4),
+                        disableDefaultUI: true
                       };
                       map = new google.maps.Map(document.getElementById('map-canvas'),
                           mapOptions);
                     }
-
                     google.maps.event.addDomListener(window, 'load', initialize);
                     </script>
 
@@ -191,21 +191,40 @@
     <!-- Contact Section -->
     <section id="contact">
             <div class="row">
-                <div class="col-lg-12 text-left section_title">
+                <div class="text-left section_title">
                     <h2>CONTACT US</h2>
                 </div>
             </div>
+            <br>
+            <div class="row">
                     <!-- google maps -->
+                <div class="col-lg-6">    
                     <div id='map-canvas'>
                     </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="vertical-line">
-                        <p>ThinkCapsule</p>
-                    </div>
                 </div>
-                 <div class="col-lg-6">
-                    <p> Something Street, <br> Toronto, Ontario <br> POSTCODE </p>
+                <div class="col-lg-6">
+                    <h1> THINKCAPSULE </h1>
+                    <p> Got a question? Don't hesitate to email us! </p>
+                    <br>
+                    <b> EMAIL <b>
+                    <br>
+                    <p>info@thinkcapsule.com</p>
+                    <br>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-2">
+                                Name <br> <input type="text" name="personName"> 
+                            </div>
+
+                            <div class="col-lg-2">
+                                Email <br> <input type="email">
+                            </div>
+                        </div>
+                        <br>
+                        Message <br><textarea name="messageText" rows="5" cols="50"></textarea>
+
+                    </form>
+
                 </div>
             </div>
 
