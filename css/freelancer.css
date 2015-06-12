@@ -71,9 +71,9 @@ header .intro-text .skills {
 }
 
 .section_title {
-    color: #fff;
-    padding: 4em;
-    background-color: #f1c40f;
+    padding: 3em;
+    background-color: #2ecc71;
+    
 }
 
 @media(min-width:768px) {
