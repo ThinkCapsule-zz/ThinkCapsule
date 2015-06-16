@@ -316,7 +316,7 @@
 
     </section>
 
-    <!--Careers Section -->
+<!--Careers Section -->
      <section id="careers">
             <div class="row">
                 <div class="col-lg-12 text-left section_title">
@@ -326,9 +326,16 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="vertical-line">
-                        <p>ThinkCapsule</p>
-                        <br>
-                        <p> At ThinkCapsule...Contact HR department </p>
+                        <div id="accordion_container">
+                            <ul class="accordion">
+                                <li class="q"><img src="http://timivey.com/external/codepen/faqaccordion/arrow.png"> BUSINESS INTERN</li>
+                                <li class="a"><button> APPLY FOR THIS POSITION </button></li>
+                                <li class="q"><img src="http://timivey.com/external/codepen/faqaccordion/arrow.png"> DESIGN INTERN</li>
+                                <li class="a"><button> APPLY FOR THIS POSITION </button></li>     
+                                <li class="q"><img src="http://timivey.com/external/codepen/faqaccordion/arrow.png">BUSINESS INTERN</li>
+                                <li class="a"><button> APPLY FOR THIS POSITION </button></li>        
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -338,6 +345,32 @@
                 </div>
             </div>           
     </section>
+    <script>
+            // Accordion
+        var action = 'click';
+        var speed = 500;
+
+        $(document).ready( function() {
+            
+            //  question handler
+           $('li.q').on(action, function() {
+               
+               // get next element
+               $(this).next()
+                   .slideToggle(speed)
+                        .siblings('li.a').slideUp(speed);
+               
+               // rotate arrow
+               var img = $(this).children('img');
+               
+               // remove rotate class
+               $('img').not(img).removeClass('rotate');
+               
+               // toggle rotate class
+               img.toggleClass('rotate');
+           });
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="text-center">
