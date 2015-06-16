@@ -9,7 +9,9 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    
 }
 
 p.small {
@@ -32,8 +34,8 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
 }
 
 h2 {
@@ -44,7 +46,8 @@ h2 {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    /* background: #18bc9c; */
+    background-image: url("http://images.newcars.com/images/car-pictures/original/2009-Infiniti-G37-Sedan-Base-4dr-Rear-wheel-Drive-Sedan-Interior-Back-Seats.png");
 }
 
 header .container {
@@ -385,8 +388,20 @@ footer .footer-below {
 
 }
 
+.vertical-line {
+
+    text-align: right;
+    padding-right: 2em;
+    margin: 2em;
+    margin-right: 0em;
+    border-right: solid #333;
+}
+
 /* Ryan's Edits */
 
+.content h3{
+    font: bold 30px Oswald, sans-serif;
+}
 .info_left .content{
     margin-top: 3em;
     padding-left: 10em;
@@ -422,6 +437,12 @@ footer .footer-below {
     margin-left: 15em;
     border-width: 3px;
     width: 75%;
+}
+
+.landing_page{
+    border-color: #4c4c4c;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.4);
 }
 
 /* For the Careers Page */
