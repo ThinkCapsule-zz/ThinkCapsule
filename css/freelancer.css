@@ -396,19 +396,39 @@ footer .footer-below {
 
 /* Ryan's Edits */
 
-.aboutus .content{
-    padding-left: 15em;
-    padding-right: 15em;
+.info_left .content{
+    margin-top: 3em;
+    padding-left: 10em;
     text-align: left;
 }
-.aboutus img{
-    margin-top: 5em;
-    margin-left: 15em;
+.info_left img{
+    margin-top: 10em;
+    margin-left: 20em;
     max-width: 350px;
-    max-height: 350px;
+    max-height: 350px;   
 }
 
-.aboutus hr{
-    height: 10px;
-    border-width: 10px;
+.info_left hr{
+    margin-left: 15em;
+    border-width: 3px;
+    width: 75%;
+}
+
+.info_right .content{
+    margin-top: 3em;
+    margin-left: 20em;
+    padding-right: 10em;
+    text-align: left;
+}
+
+.info_right img{
+    margin-top: 10em;
+    max-width: 350px;
+    max-height: 350px; 
+}
+
+.info_right hr{
+    margin-left: 15em;
+    border-width: 3px;
+    width: 75%;
 }
