@@ -444,3 +444,47 @@ footer .footer-below {
     border-width: 1px;
     background-color: rgba(0,0,0,0.4);
 }
+
+/* For the Careers Page */
+
+.vertical-line {
+
+    padding-right: 2em;
+    margin: 2em;
+    margin-right: 0em;
+    border-right: solid #333;
+}
+
+#accordion_container ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#accordion_container {
+    width: 50%;
+    margin: 10px auto;
+}
+.accordion li {
+    padding: 20px;
+}
+.accordion li.q {
+    color: #333;
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+.accordion li.a {
+    background: #ddd;
+    display: none;
+}
+@media(max-width: 800px) {
+    #container {
+        width: 90%;
+    }
+}
+
+.rotate {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
