@@ -1,4 +1,3 @@
-ThinkCapsule Company Website Basic Prototype:
+ThinkCapsule New Company Website Prototype
 
-Made with HTML/CSS/JS and Twitter Bootstrap based on the Freelancer theme.
-Really rough and being continously improved.
+Based on recent proposed changes

@@ -21,6 +21,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,12 +38,12 @@
                     function initialize() {
                       var mapOptions = {
                         zoom: 12,
-                        center: new google.maps.LatLng(43.7, -79.4)
+                        center: new google.maps.LatLng(43.7, -79.4),
+                        disableDefaultUI: true
                       };
                       map = new google.maps.Map(document.getElementById('map-canvas'),
                           mapOptions);
                     }
-
                     google.maps.event.addDomListener(window, 'load', initialize);
                     </script>
 
@@ -97,7 +98,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 section_title">
+                <div class="col-lg-12 section_title landing_page">
                 <br>
                 <br>
                     <h1> Landing page stuff goes here ==> empty right now </h1>
@@ -111,50 +112,134 @@
     <!-- About Section -->
     <section id="about">
             <div class="row">
-                <div class="col-lg-12 text-center section_title">
+                <div class="col-lg-12 text-left section_title">
                     <h2>ABOUT US</h2>
                 </div>
             </div>
-             <div class="row">
-                <div class="col-lg-12 text-center">
-                <br>
-                <br>
-                <br>
-                    <p> Random words about us </p>
+             <div class="row info_left">
+                <div class="text-center">
+                    <img class="col-lg-6" src="http://www.anterratech.com/wp-content/uploads/2012/11/Signpost-trans80.png">
+                    <div class="col-lg-6 content">
+                    <h3> Vision </h3>
+                    <br>
+                    <br>
+                    <p>Here is the content Here is the content Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent<br><br> Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is the<br><br>thecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is the
+                    </p>
+                    <br>
+                    <br>
+                    </div>
+                    <hr>
                 </div>
             </div>
 
+            <div class="row info_right">
+                <div class="text-center">
+
+                    <div class="col-lg-6 content">
+                    <h3> Random words about us </h3>
+                    <br>
+                    <br>
+                    <p>Here is the content Here is the content Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent<br><br> Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is the<br><br>thecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is the
+                    </p>
+                    <br>
+                    <br>
+                    </div>
+                    
+                    <img class="col-lg-6" src="http://www.anterratech.com/wp-content/uploads/2012/11/Signpost-trans80.png">
+                    <hr>
+                </div>
+
+            </div>
+
+
+            <div class="row info_left">
+                <div class="text-center">
+                    <img class="col-lg-6" src="http://www.anterratech.com/wp-content/uploads/2012/11/Signpost-trans80.png">
+                    <div class="col-lg-6 content">
+                    <h3> Random words about us </h3>
+                    <br>
+                    <br>
+                    <p>Here is the content Here is the content Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent<br><br> Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is the<br><br>thecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is the
+                    </p>
+                    <br>
+                    <br>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            
     </section>
+
+    <!--    Copy the code below into the the work/aboutus section to add another row
+        <div class="row info_right">
+            <div class="text-center">
+                <div class="col-lg-6 content">
+                    <h3> Put heading here </h3>
+                    <br>
+                    <br>
+                    <p>
+                        put paragraph content here
+                    </p>
+                    <br>
+                    <br>
+                </div>                    
+                    <img class="col-lg-6" src="image-source-goes-here">
+                <hr>
+            </div>
+        </div>
+    -->
+
+    <!--    Copy the code below into the the work/aboutus section to add another row
+        <div class="row info_left">
+            <div class="text-center">
+                    <img class="col-lg-6" src="image-source-goes-here">
+                <div class="col-lg-6 content">
+                    <h3> Put heading here </h3>
+                    <br>
+                    <br>
+                    <p>
+                        put paragraph conent here
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                    <hr>
+            </div>
+        </div> 
+
+    -->
 
     <!-- About Section -->
     <section id="work">
             <div class="row">
-                <div class="col-lg-12 text-center section_title">
+                <div class="col-lg-12 text-left section_title">
                     <h2>OUR WORK</h2>
                 </div>
             </div>
             <div class="row">
             <!-- project image-->
-                <div class="success">
-                    <div class="col-lg-6 text-center">
-                        <img class="img-rounded" src="img/portfolio/cabin.png" style="width: 8em; height: 6em;" alt="project-image">
+               <div class="row info_left">
+                <div class="text-center">
+                    <img class="col-lg-6" src="http://www.anterratech.com/wp-content/uploads/2012/11/Signpost-trans80.png">
+                    <div class="col-lg-6 content">
+                    <h3> Random words about us </h3>
+                    <br>
+                    <br>
+                    <p>Here is the content Here is the content Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent<br><br> Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is thecontent Here is the<br><br>thecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is thethecontent Here is the
+                    </p>
+                    <br>
+                    <br>
                     </div>
-                    <div class="col-lg-6">
-                        <h3> PROJECT NAME </h3>
-                        <hr style="width: 50%; float: left;">
-                        <br>
-                        <br>
-                        <br>
-                        <p> Description of project </p>
-                    </div>
-                </div>
+                    <hr>
             </div>
+            </div>
+
     </section>
 
        <!-- Team Section -->
     <section id="team">
             <div class="row">
-                <div class="col-lg-12 text-center section_title">
+                <div class="col-lg-12 text-left section_title">
                     <h2>TEAM</h2>
                 </div>
             </div>
@@ -191,39 +276,66 @@
     <!-- Contact Section -->
     <section id="contact">
             <div class="row">
-                <div class="col-lg-12 text-center section_title">
+                <div class="text-left section_title">
                     <h2>CONTACT US</h2>
                 </div>
             </div>
+            <br>
+            <br>
+            <div class="row">
                     <!-- google maps -->
+                <div class="col-lg-6">    
                     <div id='map-canvas'>
                     </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="vertical-line">
-                        <p>ThinkCapsule</p>
-                    </div>
                 </div>
-                 <div class="col-lg-6">
-                    <p> Something Street, <br> Toronto, Ontario <br> POSTCODE </p>
+                <div class="col-lg-6">
+                    <h1> THINKCAPSULE </h1>
+                    <p> Got a question? Don't hesitate to email us! </p>
+                    <br>
+                    <b> EMAIL <b>
+                    <br>
+                    <p>info@thinkcapsule.com</p>
+                    <br>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-2">
+                                Name <br> <input type="text" name="personName"> 
+                            </div>
+
+                            <div class="col-lg-2">
+                                Email <br> <input type="email">
+                            </div>
+                        </div>
+                        <br>
+                        Message <br><textarea name="messageText" rows="5" cols="50"></textarea>
+
+                    </form>
+
                 </div>
             </div>
 
     </section>
 
-    <!--Careers Section -->
+<!--Careers Section -->
      <section id="careers">
             <div class="row">
-                <div class="col-lg-12 text-center section_title">
+                <div class="col-lg-12 text-left section_title">
                     <h2>CAREERS</h2>
                 </div>
             </div> 
             <div class="row">
                 <div class="col-lg-6">
                     <div class="vertical-line">
-                        <p>ThinkCapsule</p>
-                        <br>
-                        <p> At ThinkCapsule...Contact HR department </p>
+                        <div id="accordion_container">
+                            <ul class="accordion">
+                                <li class="q"><img src="http://timivey.com/external/codepen/faqaccordion/arrow.png"> BUSINESS INTERN</li>
+                                <li class="a"><button> APPLY FOR THIS POSITION </button></li>
+                                <li class="q"><img src="http://timivey.com/external/codepen/faqaccordion/arrow.png"> DESIGN INTERN</li>
+                                <li class="a"><button> APPLY FOR THIS POSITION </button></li>     
+                                <li class="q"><img src="http://timivey.com/external/codepen/faqaccordion/arrow.png">BUSINESS INTERN</li>
+                                <li class="a"><button> APPLY FOR THIS POSITION </button></li>        
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -233,6 +345,32 @@
                 </div>
             </div>           
     </section>
+    <script>
+            // Accordion
+        var action = 'click';
+        var speed = 500;
+
+        $(document).ready( function() {
+            
+            //  question handler
+           $('li.q').on(action, function() {
+               
+               // get next element
+               $(this).next()
+                   .slideToggle(speed)
+                        .siblings('li.a').slideUp(speed);
+               
+               // rotate arrow
+               var img = $(this).children('img');
+               
+               // remove rotate class
+               $('img').not(img).removeClass('rotate');
+               
+               // toggle rotate class
+               img.toggleClass('rotate');
+           });
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="text-center">

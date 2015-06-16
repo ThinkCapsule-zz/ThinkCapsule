@@ -9,7 +9,9 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    
 }
 
 p.small {
@@ -32,15 +34,20 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+h2 {
+    padding-left: 5em;
 }
 
 
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    /* background: #18bc9c; */
+    background-image: url("http://images.newcars.com/images/car-pictures/original/2009-Infiniti-G37-Sedan-Base-4dr-Rear-wheel-Drive-Sedan-Interior-Back-Seats.png");
 }
 
 header .container {
@@ -67,8 +74,13 @@ header .intro-text .skills {
 }
 
 .section_title {
+    color: #fff;
     padding: 4em;
-    background-color: #2ecc71;
+    background-color: #f1c40f;
+    
+    border-style: solid;
+    border-color: #000;
+    border-width: 3px;
 }
 
 @media(min-width:768px) {
@@ -88,7 +100,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 20px 0;
+        padding: 5px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -102,11 +114,11 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -139,7 +151,7 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .success {
@@ -367,7 +379,10 @@ footer .footer-below {
 
 #map-canvas {
 
-    height: 15em;
+    height: 30em;
+    width: 40em;
+    left: 10%;
+    top: 20%;
     margin: 1px;
     padding: 0px
 
@@ -380,4 +395,96 @@ footer .footer-below {
     margin: 2em;
     margin-right: 0em;
     border-right: solid #333;
+}
+
+/* Ryan's Edits */
+
+.content h3{
+    font: bold 30px Oswald, sans-serif;
+}
+.info_left .content{
+    margin-top: 3em;
+    padding-left: 10em;
+    text-align: left;
+}
+.info_left img{
+    margin-top: 10em;
+    margin-left: 20em;
+    max-width: 350px;
+    max-height: 350px;   
+}
+
+.info_left hr{
+    margin-left: 15em;
+    border-width: 3px;
+    width: 75%;
+}
+
+.info_right .content{
+    margin-top: 3em;
+    margin-left: 20em;
+    padding-right: 10em;
+    text-align: left;
+}
+
+.info_right img{
+    margin-top: 10em;
+    max-width: 350px;
+    max-height: 350px; 
+}
+
+.info_right hr{
+    margin-left: 15em;
+    border-width: 3px;
+    width: 75%;
+}
+
+.landing_page{
+    border-color: #4c4c4c;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* For the Careers Page */
+
+.vertical-line {
+
+    padding-right: 2em;
+    margin: 2em;
+    margin-right: 0em;
+    border-right: solid #333;
+}
+
+#accordion_container ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#accordion_container {
+    width: 50%;
+    margin: 10px auto;
+}
+.accordion li {
+    padding: 20px;
+}
+.accordion li.q {
+    color: #333;
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+}
+.accordion li.a {
+    background: #ddd;
+    display: none;
+}
+@media(max-width: 800px) {
+    #container {
+        width: 90%;
+    }
+}
+
+.rotate {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
