@@ -74,8 +74,10 @@ header .intro-text .skills {
     color: #fff;
     padding: 4em;
     background-color: #f1c40f;
-    border-color: #333;
-    border-width: 1em;
+    
+    border-style: solid;
+    border-color: #000;
+    border-width: 3px;
 }
 
 @media(min-width:768px) {
@@ -146,7 +148,7 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .success {
@@ -390,4 +392,23 @@ footer .footer-below {
     margin: 2em;
     margin-right: 0em;
     border-right: solid #333;
+}
+
+/* Ryan's Edits */
+
+.aboutus .content{
+    padding-left: 15em;
+    padding-right: 15em;
+    text-align: left;
+}
+.aboutus img{
+    margin-top: 5em;
+    margin-left: 15em;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.aboutus hr{
+    height: 10px;
+    border-width: 10px;
 }
