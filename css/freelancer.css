@@ -488,3 +488,28 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+.landing_page{
+    border-color: #4c4c4c;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.team_info{
+    margin-left: 15em;
+}
+
+.team_info{
+    margin-left: 15em;
+    margin-right: 15em;
+}
+.team_info h4{
+
+    font: bold 30px 'Source Sans Pro', sans-serif;
+}
+.img-rounded{
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
