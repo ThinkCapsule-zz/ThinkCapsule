@@ -46,14 +46,14 @@
 	}
 
 	#landing {
-		background-image: url('./img/background.jpg');
+		background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');
 		background:rgba(0,0,0,0.6);
 		height: 100%;
 	}
 
 
 	#about {
-		background-image: url('./img/background.jpg');
+		background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');
 		width: 100%;
 		height: 100%;
 	}
