@@ -1,0 +1,76 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+   	}
+	
+
+	.navbar-inverse {
+		background-color: #9ACD32;
+		color: #fff;
+		padding: .8em;
+		webkit-box-shadow: 0 1px 3px #888888;
+		box-shadow: 0 1px 3px #888888;
+		margin-bottom: 5em;
+	}
+
+	#logo {
+		height: 220%;
+		margin-bottom: .5em;
+		margin-top: 0;
+	}
+
+	.navbar-inverse .navbar-nav > li > a {
+		color: #fff;
+	}
+	
+	.navlinks {
+		position: fixed;
+		right: 10%;
+	}
+	
+	.textbox {
+		margin-top: 5em;
+		text-align: center;
+		color: #333;
+	}
+
+	section {
+		margin-top: 1em;
+		margin-bottom: 5em;
+	}
+
+	#landing {
+		background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');
+		background:rgba(0,0,0,0.6);
+		height: 100%;
+	}
+
+
+	#about {
+		background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');
+		width: 100%;
+		height: 100%;
+	}
+	
+	footer {
+		border-top: .5px solid #333;
+		margin-top: 5em;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
