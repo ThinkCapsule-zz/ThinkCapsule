@@ -7,7 +7,22 @@
     body {
         padding-top: 50px;
         padding-bottom: 20px;
+        
+		
+	    
+        background-position:center center;
+	    background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg'); 
+	    background-repeat:no-repeat;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    height:100%;
+	    width:100%;
+	
    	}
+
+   	
 	
 
 	.navbar-inverse {
@@ -37,7 +52,8 @@
 	.textbox {
 		margin-top: 5em;
 		text-align: center;
-		color: #333;
+		/*changed color to white */
+		color: #fff;
 	}
 
 	section {
@@ -46,14 +62,14 @@
 	}
 
 	#landing {
-		background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');
-		background:rgba(0,0,0,0.6);
+		/*background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');*/
+		/*background:rgba(0,0,0,0.6);*/
 		height: 100%;
 	}
 
 
 	#about {
-		background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');
+		/*background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg');*/
 		width: 100%;
 		height: 100%;
 	}
@@ -63,6 +79,9 @@
 		margin-top: 5em;
 	}
 
+	/* Ryan's Additions */
+
+	
 
 
 
