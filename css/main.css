@@ -103,6 +103,9 @@
 		margin-right: 300px;
 	}
 
+	.border-right {
+		border-right: .5px solid #fff;
+	}
 
 
 
