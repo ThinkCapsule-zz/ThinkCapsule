@@ -120,6 +120,8 @@ body {
 	.work img{
 +		max-width: 300px;
 +		max-height: 300px;
+height: 60%;
+width: 60%;
 	}
 	.work p{
 		margin-left: 0px;
