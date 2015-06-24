@@ -4,7 +4,8 @@
    Author's custom styles
    ========================================================================== */
 
-    body {
+    
+body {
         padding-top: 50px;
         padding-bottom: 20px;
         
@@ -19,11 +20,18 @@
 	    background-size: cover;
 	    height: 100%;
         
-	    
-	   
-	
-   	}
-	
+	  	}
+
+
+	.overlay {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  height: 100%;
+		  width: 100%;
+		  z-index: 10;
+		  background-color: rgba(0,0,0,0.65);
+		}
 
 	.navbar-inverse {
 		background-color: #9ACD32;
@@ -59,6 +67,8 @@
 	section {
 		margin-top: 1em;
 		margin-bottom: 5em;
+		z-index: 13;
+		position: relative;
 	}
 
 	#landing {
@@ -124,10 +134,13 @@
 		border-right: 1px solid #fff;
 	}
 
+	#map-canvas {
+		width: 100%;
+	}
 
-
-
-
+	#contact {
+		height: 1000px;
+	}
 
 
 
