@@ -39,7 +39,7 @@ body {
 		padding: .8em;
 		webkit-box-shadow: 0 1px 3px #888888;
 		box-shadow: 0 1px 3px #888888;
-		margin-bottom: 5em;
+		margin-bottom: 600px;
 	}
 
 	#logo {
@@ -93,7 +93,7 @@ body {
 
 	
 	.info{
-		margin-top: 600px;
+		margin-top: 200px;
 		margin-bottom: 600px;
 		padding-top: 3em;
 		padding-bottom: 3em;
@@ -112,8 +112,8 @@ body {
 	}
 
 	.work img{
-		max-width: 500px;
-		max-height: 500px;
++		max-width: 300px;
++		max-height: 300px;
 	}
 	.work p{
 		margin-left: 0px;
