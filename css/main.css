@@ -23,9 +23,6 @@
 	   
 	
    	}
-   	
-
-   	
 	
 
 	.navbar-inverse {
@@ -78,9 +75,13 @@
 	}
 	
 	footer {
+		border-top: .5px solid #333;
 		margin-top: 5em;
 	}
 
+	/* Ryan's Additions */
+
+	
 	.info{
 		margin-top: 600px;
 		margin-bottom: 600px;
@@ -100,22 +101,31 @@
 		margin-right: 300px;
 	}
 
-	.border-right {
-		border-right: .5px solid #fff;
+	.work img{
+		max-width: 500px;
+		max-height: 500px;
+	}
+	.work p{
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
-	#map-canvas {
-		width: 100%;
-		height: 100%;
+		button { 
+		border-radius: 5px;
+		color: #333;
+		background-color: grey;
+		padding: .5em;
+		webkit-box-shadow: 0 1px 3px #888888;
+		box-shadow: 0 1px 3px #888888;
+
+		}
+
+	.border-right {
+		border-right: 1px solid #fff;
 	}
-	
-	.greenbox {
-		margin-top:20em;
-		margin-bottom: 20em;
-		background-color: #9ACD32;
-		text-align: center;
-		color: #fff;
-	}
+
+
+
 
 
 
