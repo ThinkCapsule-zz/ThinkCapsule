@@ -43,9 +43,15 @@ body {
 	}
 
 	#logo {
-		height: 220%;
-		margin-bottom: .5em;
+		height: 100px;
+		padding-bottom: 3em;
+		margin-bottom: 1em;
 		margin-top: 0;
+	}
+
+	.logo2 {
+		height: 100px;
+		margin-bottom: 0;
 	}
 
 	.navbar-inverse .navbar-nav > li > a {
