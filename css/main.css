@@ -94,6 +94,11 @@ body {
 		border-top: .5px solid #333;
 		margin-top: 5em;
 	}
+	
+	#map_canvas {
+        height:20em;
+        width: 100%;
+     }
 
 	/* Ryan's Additions */
 
