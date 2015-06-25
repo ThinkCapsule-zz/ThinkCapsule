@@ -176,13 +176,11 @@ body {
 	margin: 0 auto 25px auto;
 	position: relative;
 	display: block;
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
 }
 
 .description {
-	margin: 2em;
+	margin-top: 1em;
+	margin-bottom: .5em;
 	text-align: center;
 	color: #333;
 }
