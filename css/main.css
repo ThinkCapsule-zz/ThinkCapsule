@@ -4,7 +4,11 @@
    Author's custom styles
    ========================================================================== */
 
-    
+html {
+	font-family: "Times New Roman", Georgia, Serif;
+}    
+
+
 body {
         padding-top: 50px;
         padding-bottom: 20px;
@@ -159,7 +163,7 @@ body {
 }
 
 .teaminfo h2{
-	color: black;
+	color: #333;
 	font-size: 50px;
 }
 
@@ -175,7 +179,9 @@ body {
     transform: rotate(90deg);
 }
 
-
-
-
+.description {
+	margin: 2em;
+	text-align: center;
+	color: #333;
+}
 
