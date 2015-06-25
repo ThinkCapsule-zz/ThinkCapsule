@@ -14,8 +14,31 @@
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="./css/main.css">
+        <!-- fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
 
-        <script src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="./js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v3.exp"></script>
+
+        <script type="text/javascript">
+
+          function initialize() {
+            var map;
+              var latlng = new google.maps.LatLng(43.7, -79.4);
+              var myOptions = {
+                  zoom: 8,
+                  center: latlng,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  disableDefaultUI: true
+              };
+              map = new google.maps.Map(document.getElementById("map_canvas"),
+                      myOptions);
+          }
+          google.maps.event.addDomListener(window, "load", initialize);
+
+        </script>
+
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -23,14 +46,12 @@
         <![endif]-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="navbar-header">
           <!-- add logo here -->
-          <a class="navbar-brand" href="#"><img id="logo" src="https://cloud.githubusercontent.com/assets/9067177/8275618/63ce872a-1877-11e5-857f-9e8bb15aec47.jpg" alt="ThinkCapsule"></a>
+          <a class="navbar-brand" href="#"><img id="logo" src="https://cloud.githubusercontent.com/assets/9067177/8339272/37fa933c-1a84-11e5-9274-348e77291254.png" alt="ThinkCapsule"></a>
           <!-- Navigation Links -->
           <div class="collapse navbar-collapse" >
-            <div class="navlinks">
               <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
+                <li>
                   <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
@@ -49,19 +70,19 @@
                   <a href="#careers">CAREERS</a>
                 </li>
               </ul>
-            </div>
-          </div>
         </div>
       </div>
     </nav>
-  
+<div class="page">
+  <div class="overlay">
+  </div>
       <section id="landing">
         
         <div class="col-lg-4">
 
         </div>
         <div class="col-lg-4">
-          <div class="textbox">
+          <div class="row textbox">
             
             <h1>thinkcapsule</h1>
 
@@ -74,46 +95,226 @@
         </div>
       </section>
   
-      <!-- The about us section -->
-      <section id="about">
+        <div id="about" class="col-lg-12">	    
+      <p>&nbsp;</p>		
+     </div>		
+      		
+    <section>		
+         <div class="info col-lg-12">		         
+           <h1>hello</h1>		           
+           <br>		           
 
+ 		 
+       </section>		      
+ 		 
+   <div id="work" class="col-lg-12">		
+        <p>&nbsp;</p>		
+      </div>		
+		
+       <!-- work section-->		     
+   <section>		
+        <div class="info work col-lg-12">		          
+           <div class="col-lg-6">		           
+             <img src="http://yourfirstsmartphone.com/wp-content/uploads/2014/08/android-phone-galaxy-s4-png.png">		            
+           </div>
+           <div class="col-lg-6">
+            <h1>hello</h1>
+            <br>
+            <p>The viewer trails on top of the united atmosphere. The bath camps across the shock. A genetics summarizes the bounce. The cramp remembers the strangest gateway on top of the proof. Does the infrequent divine conform the violin?</p>
+          </div>
+        </div>
+       </section>		       
+ 		 
+  <div id="team" class="col-lg-12">		
+       <p>&nbsp</p>		
+       </div>			
+            <!-- team section -->		  
+  <section>
+      <div class="container teaminfo col-lg-12">
+        <div class="row col-lg-12">
+          <div class="text-lowercase text-center">
+            <h2>the team</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row " style="margin-bottom: 1em;">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360386/6becd1c6-1b3a-11e5-8c30-be62eb8bf773.png" alt="anthony kong">
+          </div>
+          <div class="col-lg-2 circle">
+               <img src="https://cloud.githubusercontent.com/assets/9067177/8360395/7b391068-1b3a-11e5-9f82-c1de079e282e.png" alt="alan hsu">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360389/730fe27c-1b3a-11e5-8a7b-797d1d91210b.png" alt="kevin">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360394/7747d912-1b3a-11e5-8cef-8e946cb35bc4.png" alt="henry">
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+        <div class="row description">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-2">
+            <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2">
+            <h4> Alan Hsu </h4>
+              <p> Design Lead, Engineering Lead </p>
+          </div>
+          <div class="col-lg-2 ">
+          <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2 ">
+          <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360398/7fbab1a0-1b3a-11e5-87ea-d94fecfebf1a.png" alt="abby">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360401/82da06ec-1b3a-11e5-9782-bb7b00fbeb6e.png" alt="alysha">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360403/863d6568-1b3a-11e5-909d-dcf6b0305976.png" alt="esther">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360407/89aca43e-1b3a-11e5-9ff4-1ce4700a4db6.png" alt="ryan">
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+        <div class="row description">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-2">
+            <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2">
+            <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2 ">
+          <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2 ">
+          <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+        <div class="row">
+              <div class="col-lg-2">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360410/8cdfb614-1b3a-11e5-8219-18e04c4ac97d.png" alt="
+              dogwalker_boy">
+          </div>
+          <div class="col-lg-2 circle">
+              <img src="https://cloud.githubusercontent.com/assets/9067177/8360417/942e3f26-1b3a-11e5-8e54-113b6f72aff0.png" alt="bill">
+          </div>
+          <div class="col-lg-2">
 
+          </div>
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+        <div class="row description">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-2">
+            <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2">
+            <h4> Anthony Kong </h4>
+              <p> Founder, CEO </p>
+          </div>
+          <div class="col-lg-2 ">
+          </div>
+          <div class="col-lg-2 ">
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+      </div>
+  </section>		
+        			
+        		
+     <div id="contact" class="col-lg-12">		
+          <p>&nbsp</p>		
+       </div>		
+ 		 
+       <!-- contact us section -->		       
+     <section>		
+           <div class="info col-lg-12">		          
+             <h1>contact us</h1>		             
+             <div class="col-lg-8 border-right">		            
+		<div id="map_canvas">
+			
+		</div>
+             </div>		             
+             <div class="col-lg-4">		            
+		<img class="logo2" src="https://cloud.githubusercontent.com/assets/9067177/8339272/37fa933c-1a84-11e5-9274-348e77291254.png" alt="ThinkCapsule">
+                 <h2>ThinkCapsule Inc.</h2>		                 
+                 <h4>100 Yonge Street</h4>		                
+                 <h4>M5V 8C1</h4>		                 
 
+ 		 
+       </section>		      
+       		       
+  <div id="careers" class="col-lg-12">		
+        <p>&nbsp</p>		
+      </div>		
+    		
+       <!-- careers section -->		       
+    <section>
+        <div class="info col-lg-12">
+            <h2>careers</h2>
+            <div class="col-lg-6 border-right">
+                <ul>
+                    <li><a href="#careersText1" onclick="showCareersText1()"><h2>IOS Engineer</h2></a></li>
+                    <li><a href="#careersText2" onclick="showCareersText2()"><h2>Journalist</h2></a></li>
+                    <li><a href="#careersText3" onclick="showCareersText3()"><h2>UI Designer</h2></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <p class="careersText1" style="font-size: 15px; text-align: center; margin: 0;">
+                    1-2 years of experience building with IOS...
+                </p>
+                <p class="careersText2 hidden" style="font-size: 15px; text-align: center; margin: 0;">
+                  1-2 years of experience with writing...
+                </p>
+                <p class="careersText3 hidden" style="font-size: 15px; text-align: center; margin: 0;">
+                  1-2 years of experience with design...
+                </p>
+                <button class="applyBtn">apply now</button>
+            </div>
+        </div>
       </section>
 
-      <!-- work section-->
-      <section id="work">
+      </div>
 
 
-      </section>
+        <script>window.jQuery || document.write('<script src="./js/jquery-1.11.2.min.js"><\/script>')</script>
 
-      <!-- team section -->
-      <section id="team">
-
-
-      </section>
-
-      <!-- contact us section -->
-      <section id="contact">
-
-
-      </section>
-      
-      <!-- careers section -->
-      <section id="careers">
-
-
-      </section>
-  
-      <br>  
-      <footer>
-        <p>&copy; Made with Love by ThinkCapsule, 2015</p>
-      </footer>
-        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
 
         <script src="./js/main.js"></script>
 
