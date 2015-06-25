@@ -143,12 +143,6 @@
 		<div id="map_canvas">
 			
 		</div>
-		<style>
-                #map_canvas {
-                  height:20em;
-                  width: 100%;
-                }
-               </style>
              </div>		             
              <div class="col-lg-4">		            
 		<img class="logo2" src="https://cloud.githubusercontent.com/assets/9067177/8339272/37fa933c-1a84-11e5-9274-348e77291254.png" alt="ThinkCapsule">
@@ -169,14 +163,20 @@
             <h2>careers</h2>
             <div class="col-lg-6 border-right">
                 <ul>
-                    <li><a href="#">IOS Engineer</a></li>
-                    <li><a href="#">Journalist</a></li>
-                    <li><a href="#">UI Designer</a></li>
+                    <li><a href="#careersText1" onclick="showCareersText1()">IOS Engineer</a></li>
+                    <li><a href="#careersText2" onclick="showCareersText2()">Journalist</a></li>
+                    <li><a href="#careersText3" onclick="showCareersText3()">UI Designer</a></li>
                 </ul>
             </div>
             <div class="col-lg-6">
-                <p style="font-size: 20px;">
+                <p class="careersText1" style="font-size: 15px; text-align: center; margin: 0;">
                     1-2 years of experience building with IOS...
+                </p>
+                <p class="careersText2 hidden" style="font-size: 15px; text-align: center; margin: 0;">
+                  1-2 years of experience with writing...
+                </p>
+                <p class="careersText3 hidden" style="font-size: 15px; text-align: center; margin: 0;">
+                  1-2 years of experience with design...
                 </p>
                 <button class="applyBtn">apply now</button>
             </div>
