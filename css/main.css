@@ -118,10 +118,10 @@ body {
 	}
 
 	.work img{
-+		max-width: 300px;
-+		max-height: 300px;
-height: 60%;
-width: 60%;
+		max-width: 300px;
+		max-height: 300px;
+		height: 60%;
+		width: 60%;
 	}
 	.work p{
 		margin-left: 0px;
@@ -140,6 +140,10 @@ width: 60%;
 
 	.border-right {
 		border-right: 1px solid #fff;
+	}
+
+		.hidden {
+		display: none;
 	}
 
 
