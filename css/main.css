@@ -4,8 +4,8 @@
    Author's custom styles
    ========================================================================== */
 
-html {
-	font-family: "Times New Roman", Georgia, Serif;
+html, body, p, h1, h2, h3, h4 {
+	font-family: 'Source Sans Pro', sans-serif;
 }    
 
 
@@ -79,6 +79,8 @@ body {
 		margin-bottom: 5em;
 		z-index: 13;
 		position: relative;
+		webkit-box-shadow: 5 5px 5px #888888;
+		box-shadow: 5 5px 5px #888888;
 	}
 
 	#landing {
@@ -185,3 +187,7 @@ body {
 	color: #333;
 }
 
+ul
+{
+    list-style-type: none;
+}
