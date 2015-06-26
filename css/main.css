@@ -104,7 +104,7 @@ body {
 	
 	#map_canvas {
         height:20em;
-        width: 960px;
+        width: 1126px;
 		margin: 0;
      }
 
@@ -112,8 +112,8 @@ body {
 		background-color: #9ACD32;
 		text-align: center;
 		color: #fff;
-        	height:20em;
-		width: 33.3333%;
+        height:20em;
+		width: 564px;
 	}
 
 	
@@ -147,59 +147,223 @@ body {
 		margin-right: 0px;
 	}
 
-	button { 
-		border-radius: 10px;
-		color: #333;
-		background-color: #bdc3c7;
-		padding: .5em;
-		padding-left: 2em;
-		padding-right: 2em	;
-		webkit-box-shadow: 0 1px 3px #888888;
-		box-shadow: 0 1px 3px #888888;
-		margin-top: 1em;
-		}
+	.flat-button {
+	  width: 20%;
+	  margin: 0 auto;
+	  margin-top: 2em;
+	  border-radius: 5px;
+	  padding: .5em;
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  position: relative;
+	  background: #bdc3c7;
+	  overflow: hidden;
+	  z-index: 1;
+
+	  transition: color .3s;
+	  text-align: center;
+	  color: #fff;
+	}
+
+	.flat-button:after {
+	  position: absolute;
+	  top: 90%;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background: #7f8c8d;
+	  content: "";
+	  z-index: -2;
+	  transition: transform .3s;
+	}
+
+	.flat-button:hover::after {
+	  transform: translateY(-80%);
+	  transition: transform .3s;
+	}
 
 
 	.border-right {
 		border-right: 1px solid #fff;
+
 	}
 
-		.hidden {
+	.hidden {
 		display: none;
 	}
 
-/* team page stuff */
+	.teaminfo{
+		margin-top: 200px;
+		background-color: #fff;
+	}
 
-.teaminfo{
-	margin-top: 200px;
-	background-color: #fff;
+	.teaminfo h2{
+		color: #333;
+		font-size: 50px;
+	}
+
+	.circle img{
+		border-radius: 50%;
+		width: 80%;
+		height: 80%;
+		margin: 0 auto 25px auto;
+		position: relative;
+		display: block;
+	}
+
+	.description {
+		margin-top: 1em;
+		margin-bottom: .5em;
+		text-align: center;
+		color: #333;
+	}
+
+	ul
+	{
+	    list-style-type: none;
+	}
+	.no-anchor a {
+		color: inherit;
+	}
+
+	.equal-height {
+		padding-bottom: 5em;
+
+	}
+
+	.smallSizeDescription {
+		display: none;
+	}
+
+	.big-bottom {
+		padding-bottom: 5em;
+	}
+
+/****  Laptop size ****/
+
+@media (max-width: 1366px) {
+
+	#map_canvas {
+        height:20em;
+        width: 1366px;
+		margin: 0;
+     }
+
+	.greenbox {
+		background-color: #9ACD32;
+		text-align: center;
+		color: #fff;
+        height: 100%;
+		width: 100%;
+	}
+
+	.smallSizeDescription {
+		display: none;
+	}
+
+
 }
 
-.teaminfo h2{
-	color: #333;
-	font-size: 50px;
+/**** Minimized laptop size ****/
+
+@media (max-width: 1200px) {
+
+		#map_canvas {
+        height:20em;
+        width: 100%;
+		margin: 0;
+     }
+
+
+	.greenbox {
+		background-color: #9ACD32;
+		text-align: center;
+		color: #fff;
+        height:100%;
+		width: 100%;
+	}
+
+
+	.description {
+		display: none;
+	}
+
+	.smallSizeDescription {
+		display: block;
+		margin: 2em;
+		text-align: center;
+	}
+
+	.border-right {
+		border: none;
+		margin-left: -1em;
+	}
+
+	.full-width {
+		width: 100%;
+		text-align: center;
+		margin-top: 2em;
+	}
+
+	.align-right {
+		margin-top: 2em;
+	}
+
 }
 
-.circle img{
-	border-radius: 50%;
-	width: 80%;
-	height: 80%;
-	margin: 0 auto 25px auto;
-	position: relative;
-	display: block;
+
+/****  Tablet size ****/
+
+@media (max-width: 720px) {
+
+	#map_canvas {
+        height:10em;
+        width: 100%;
+		margin: 0;
+     }
+
+	.greenbox {
+		background-color: #9ACD32;
+		text-align: center;
+		color: #fff;
+        height:100%;
+		width: 100%;
+	}
+
+
+	.smallSizeDescription {
+		display: block;
+		margin: 2em;
+		text-align: center;
+	}
+
+	.jobDesc {
+		display: none;
+	}
+
 }
 
-.description {
-	margin-top: 1em;
-	margin-bottom: .5em;
-	text-align: center;
-	color: #333;
+/****  Mobile size ****/
+
+@media (max-width: 360px) {
+
+	#map_canvas {
+	    height:10em;
+        width: 100%;
+		margin: 0;
+     }
+
+	.greenbox {
+		background-color: #9ACD32;
+		text-align: center;
+		color: #fff;
+        height:100%;
+		width: 100%;
+	}
+
+	.flat-button {
+		padding-right: 4em;
+	}
+
 }
 
-ul
-{
-    list-style-type: none;
-}
-.no-anchor a {
-	color: inherit;
-}
