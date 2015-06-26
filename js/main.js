@@ -1,3 +1,20 @@
+//*** Adds scrolling functionality
+
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+
+
+//*** For the job descriptions
 
 var careersText1 = $('.careersText1');
 var careersText2 = $('.careersText2');
