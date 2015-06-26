@@ -196,4 +196,6 @@ ul
 {
     list-style-type: none;
 }
-
+.no-anchor a {
+	color: inherit;
+}
