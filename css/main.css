@@ -317,7 +317,7 @@ body {
 @media (max-width: 720px) {
 
 	#map_canvas {
-        height:10em;
+        height:20em;
         width: 100%;
 		margin: 0;
      }
