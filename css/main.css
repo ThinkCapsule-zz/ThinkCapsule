@@ -103,10 +103,17 @@ body {
 	
 	#map_canvas {
         height:20em;
-        width: 100%;
+        width: 960px;
+		margin: 0;
      }
 
-	/* Ryan's Additions */
+	.greenbox {
+		background-color: #9ACD32;
+		text-align: center;
+		color: #fff;
+        	height:20em;
+		width: 33.3333%;
+	}
 
 	
 	.info{
