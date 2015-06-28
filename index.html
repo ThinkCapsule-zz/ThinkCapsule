@@ -303,6 +303,7 @@
                 </ul>
             </div>
             <div class="col-lg-6 align-right">
+              <div id="hideAfterApply">
                 <p class="careersText1 jobDesc" style="font-size: 15px; text-align: center; margin: 0;">
                     1-2 years of experience building with IOS...
                 </p>
@@ -313,16 +314,22 @@
                   1-2 years of experience with design...
                 </p>
                 <div class='flat-button'>
-                  <a href="" onclick="openApplyWindow()">
+                  <a href="#careers" onclick="openApplyWindow()">
                     apply
                   </a>
                 </div>
-                <div id="applyWindow" class="hidden">
-                <form> 
-
-
+              </div>
+              <div id="applyWindow" class="hidden">
+                <form action="mailto:you@yourwebsite.com"> 
+                  Name:&nbsp;<input type="text" name="Name">
+                  <br>
+                  Email:&nbsp;<input type="text" name="Email">
+                  <br>
+                  Resume:&nbsp;<input id="fileBtn" type="file" name="Resume">
+                  <br>
+                  <input class="flat-button" onsubmit="closeApplyWindow" type="submit" name="submit" value="Submit">
                 </form>
-                </div> 
+              </div> 
             </div>
         </div>
       </section>
