@@ -41,3 +41,18 @@ function showCareersText3() {
 	careersText1.addClass('hidden');
 	careersText3.removeClass('hidden');
 }
+
+//*** For opening the applyWindow 
+
+var applyWindow = $('#applyWindow');
+var jobDescSection = $('#hideAfterApply');
+
+function openApplyWindow() {
+	applyWindow.removeClass('hidden');
+	jobDescSection.addClass('hidden');
+}
+
+function closeApplyWindow() {
+	applyWindow.addClass('hidden');
+	jobDescSection.removeClass('hidden');
+}
