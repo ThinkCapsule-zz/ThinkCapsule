@@ -75,6 +75,14 @@ body {
 		color: #fff;
 	}
 
+	.textbox h1 {
+		font-size: 80px;
+		font-weight: bold;
+	}
+	.textbox h3 {
+		font-size: 70px;
+	}
+
 	section {
 		margin-top: 1em;
 		margin-bottom: 5em;
@@ -86,7 +94,7 @@ body {
 
 	#landing {
 		
-		background:rgba(0,0,0,0.6);
+		
 		height: 100%;
 	}
 
@@ -193,7 +201,7 @@ body {
 	}
 
 	.teaminfo{
-		margin-top: 200px;
+		margin-top: 40px;
 		background-color: #fff;
 	}
 
