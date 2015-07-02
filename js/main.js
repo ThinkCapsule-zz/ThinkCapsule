@@ -13,6 +13,12 @@ $('a[href^="#"]').on('click', function(event) {
 
 });
 
+$('.page-scroll').hover(function() {
+    $('a', $(this).closest('.page-scroll')).css('text-decoration', 'underline');
+	}, function() {
+    $('a', $(this).closest('.page-scroll')).css('text-decoration', 'none');
+});
+
 
 //*** For the job descriptions
 
