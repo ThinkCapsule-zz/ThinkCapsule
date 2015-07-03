@@ -4,6 +4,8 @@
    Author's custom styles
    ========================================================================== */
 
+   /*hamburg button: http://czero-solutions.com/wp-content/themes/czero/img/hamburgermenu.png*/
+
 html, body, p, h1, h2, h3, h4 {
 	font-family: 'Source Sans Pro', sans-serif;
 }    
@@ -23,8 +25,12 @@ body {
 	    -o-background-size: cover;
 	    background-size: cover;
 	    height: 100%;
+
+	    overflow-x: hidden;
         
 	  	}
+
+	
 
 
 	.overlay {
@@ -36,21 +42,29 @@ body {
 		  z-index: 10;
 		  background-color: rgba(0,0,0,0.65);
 		}
+	.menu{
+		background-color: white;
+		position: fixed;
+		margin-top: 1.5em;
+		right: 10%;
+	}
 
 	.navbar-inverse {
 		background-color: #9ACD32;
 		color: #fff;
 		padding: .8em;
-		webkit-box-shadow: 0 1px 3px #888888;
-		box-shadow: 0 1px 3px #888888;
+		/*webkit-box-shadow: 0 1px 3px #888888;*/
+		/*box-shadow: 0 1px 3px #888888;*/
 		margin-bottom: 600px;
 	}
 
 	#logo {
-		height: 100px;
-		padding-bottom: 3em;
+		height: 50px;
+		/*padding-bottom: 3em;*/
 		margin-bottom: 1em;
 		margin-top: 0;
+
+		
 	}
 
 	.logo2 {
@@ -69,7 +83,8 @@ body {
 	}
 	
 	.textbox {
-		margin-top: 5em;
+		margin-top: 17em;
+		margin-bottom: 5em;
 		text-align: center;
 		/*changed color to white */
 		color: #fff;
