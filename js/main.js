@@ -19,6 +19,18 @@ $('.page-scroll').hover(function() {
     $('a', $(this).closest('.page-scroll')).css('text-decoration', 'none');
 });
 
+//*** adding hambyrger button
+$('.hamburger').on('click',function(event){
+	$('.page-scroll').toggle();
+});
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    $('.page-scroll').hide();
+    $('.hamburger').show();
+}
+else{
+	$('.hmaburger').hide();
+}
+
 
 //*** For the job descriptions
 
