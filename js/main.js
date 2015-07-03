@@ -21,14 +21,16 @@ $('.page-scroll').hover(function() {
 
 //*** adding hambyrger button
 $('.hamburger').on('click',function(event){
-	$('.page-scroll').toggle();
+	$('.menu').toggle();
 });
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('.page-scroll').hide();
     $('.hamburger').show();
+    $('body').addClass('.phone');
 }
 else{
-	$('.hmaburger').hide();
+	$('.hamburger').hide();
+	$('.menu').hide();
 }
 
 
