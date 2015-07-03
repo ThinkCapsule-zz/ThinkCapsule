@@ -403,7 +403,7 @@ body {
 @media (max-width: 360px) {
 
 	body{
-		background-size: 700px 1000px;
+		background-image:none;
 	}
 
 
