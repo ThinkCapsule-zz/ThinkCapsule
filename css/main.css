@@ -353,6 +353,7 @@ body {
 
 @media (max-width: 720px) {
 
+
 	#map_canvas {
         height:20em;
         width: 100%;
@@ -402,8 +403,9 @@ body {
 @media (max-width: 360px) {
 
 	body{
-		background-size: contain;
+		background-size: 700px 1000px;
 	}
+
 
 	.textbox h1, .textbox h3 {
 		font-size: 24px;
@@ -423,16 +425,16 @@ body {
 	}
 
 	#map_canvas {
-	    height:20em;
-        width: 100%;
+		height:20em;
+        	width: 100%;
 		margin: 0;
-     }
+     	}
 
 	.greenbox {
 		background-color: #9ACD32;
 		text-align: center;
 		color: #fff;
-        height:100%;
+        	height:100%;
 		width: 100%;
 	}
 
