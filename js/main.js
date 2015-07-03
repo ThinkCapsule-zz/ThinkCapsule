@@ -24,9 +24,8 @@ $('.hamburger').on('click',function(event){
 	$('.menu').toggle();
 });
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    $('.page-scroll').hide();
+    $('nav .page-scroll').hide();
     $('.hamburger').show();
-    $('body').addClass('.phone');
 }
 else{
 	$('.hamburger').hide();
