@@ -384,8 +384,22 @@ body {
 
 @media (max-width: 360px) {
 
+	.textbox h1, .textbox h3 {
+		font-size: 24px;
+	}
+
+	.info h1,h2,h3,h4 {
+		font-size: 24px;
+	}
+
+	.info p {
+		font-size: 20px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	#map_canvas {
-	    height:10em;
+	    height:20em;
         width: 100%;
 		margin: 0;
      }
@@ -402,5 +416,8 @@ body {
 		padding-right: 4em;
 	}
 
+	.big-bottom {
+		padding-bottom: 2em;
+	}
 }
 
