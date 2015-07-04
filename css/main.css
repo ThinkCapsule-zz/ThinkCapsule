@@ -36,7 +36,12 @@ body {
 		font-size:50%;
 	}
 
-	
+	.hamburger{
+		position: relative;
+		float: right;
+		margin-top: 1em;
+		display: none;
+	}
 
 
 	.overlay {
@@ -53,15 +58,21 @@ body {
 		position: fixed;
 		margin-top: 1.5em;
 		right: 10%;
+		float: right;
+		z-index: 50;
+		display: none;
 	}
 
 	.navbar-inverse {
 		background-color: #9ACD32;
 		color: #fff;
 		padding: .8em;
-		/*webkit-box-shadow: 0 1px 3px #888888;*/
-		/*box-shadow: 0 1px 3px #888888;*/
+		webkit-box-shadow: 0 1px 10px #000;
+		box-shadow: 0 1px 10px #000;
 		margin-bottom: 600px;
+		border-bottom: none;
+		max-height: 40px;
+		font-size 18px;
 	}
 
 	#logo {
@@ -147,7 +158,7 @@ body {
 
 	
 	.info{
-		margin-top: 200px;
+		margin-top: 150px;
 		margin-bottom: 600px;
 		padding-top: 3em;
 		padding-bottom: 3em;
@@ -222,7 +233,7 @@ body {
 	}
 
 	.teaminfo{
-		margin-top: 40px;
+		margin-top: 20px;
 		background-color: #fff;
 	}
 
