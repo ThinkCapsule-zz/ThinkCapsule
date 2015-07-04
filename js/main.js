@@ -23,13 +23,17 @@ $('.page-scroll').hover(function() {
 $('.hamburger').on('click',function(event){
 	$('.menu').toggle();
 });
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    $('nav .page-scroll').hide();
-    $('.hamburger').show();
-}
-else{
-	$('.hamburger').hide();
-	$('.menu').hide();
+//  /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent
+window.onresize = function() {
+    if (window.innerWidth < 500) {
+    	$('.nav .page-scroll').hide();
+    	$('.hamburger').show();
+	}
+    else if (window.innerWidth >= 500){
+    	$('.menu').hide();
+		$('.hamburger').hide();
+		$('.nav .page-scroll').show();
+	}
 }
 
 
