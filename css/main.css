@@ -66,7 +66,7 @@ body {
 	.navbar-inverse {
 		background-color: #9ACD32;
 		color: #fff;
-		padding: .8em;
+		padding: 0em;			/*esther's edit: changed padding to centre text in navbar*/
 		webkit-box-shadow: 0 1px 10px #000;
 		box-shadow: 0 1px 10px #000;
 		margin-bottom: 600px;
