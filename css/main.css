@@ -144,7 +144,7 @@ body {
 	
 	#map_canvas {
         height:20em;
-        width: 1126px;
+        width: 100%;
 		margin: 0;
      }
 
@@ -153,7 +153,7 @@ body {
 		text-align: center;
 		color: #fff;
         height:20em;
-		width: 564px;
+		width: 100%;
 	}
 
 	
@@ -294,7 +294,7 @@ body {
 
 	#map_canvas {
         height:20em;
-        width: 1366px;
+        width: 100%;
 		margin: 0;
      }
 
