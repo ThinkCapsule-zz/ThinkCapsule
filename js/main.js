@@ -44,8 +44,16 @@ var careersText2 = $('.careersText2');
 var careersText3 = $('.careersText3');
 
 // Refactor this, never repeat yourself
+ 
+var applyWindow = $('#applyWindow'); // the application popup
+var jobDescSection = $('#hideAfterApply'); // the job descriptions
 
 function showCareersText1() {
+
+	if (jobDescSection.is($('.hidden'))) {
+		closeApplyWindow();
+	}
+
 	careersText2.addClass('hidden');
 	careersText3.addClass('hidden');
 	careersText1.removeClass('hidden');
@@ -54,12 +62,21 @@ function showCareersText1() {
 
 
 function showCareersText2() {
+
+	if (jobDescSection.is($('.hidden'))) {
+		closeApplyWindow();
+	}
 	careersText3.addClass('hidden');
 	careersText1.addClass('hidden');
 	careersText2.removeClass('hidden');
 }
 
 function showCareersText3() {
+	
+	if (jobDescSection.is($('.hidden'))) {
+		closeApplyWindow();
+	}
+
 	careersText2.addClass('hidden');
 	careersText1.addClass('hidden');
 	careersText3.removeClass('hidden');
@@ -67,8 +84,7 @@ function showCareersText3() {
 
 //*** For opening the applyWindow 
 
-var applyWindow = $('#applyWindow');
-var jobDescSection = $('#hideAfterApply');
+
 
 function openApplyWindow() {
 	applyWindow.removeClass('hidden');
