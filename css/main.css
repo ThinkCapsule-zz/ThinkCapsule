@@ -64,7 +64,9 @@ body {
 	.menu a{
 		color: #fff;
 	}
-
+	#hamMenu {
+		padding: .5em;
+	}
 	.navbar-inverse {
 		background-color: #9ACD32;
 		color: #fff;
