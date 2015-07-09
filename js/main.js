@@ -21,20 +21,37 @@ $('.page-scroll').hover(function() {
 
 //*** adding hambyrger button
 $('.hamburger').on('click',function(event){
-	$('.menu').toggle();
+	showMenu();
 });
-//  /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent
-window.onresize = function() {
-    if (window.innerWidth < 500) {
+$('.menu .page-scroll').on('click',function(event){
+	showMenu();
+});
+
+function showBurger(){
+	if (window.innerWidth < 750) {
     	$('.nav .page-scroll').hide();
     	$('.hamburger').show();
 	}
-    else if (window.innerWidth >= 500){
+    else if (window.innerWidth >= 750){
     	$('.menu').hide();
 		$('.hamburger').hide();
 		$('.nav .page-scroll').show();
 	}
 }
+function showMenu(){
+	$( ".menu" ).animate({
+    	height: "toggle"
+  	}, 500, function() {
+    // Animation complete.
+  	});
+}
+//  /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent
+window.onresize = function() {
+    showBurger();
+}
+$( window ).preLoad(function() {
+  	showBurger();
+});
 
 
 //*** For the job descriptions

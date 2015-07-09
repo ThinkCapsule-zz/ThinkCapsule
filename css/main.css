@@ -54,13 +54,15 @@ body {
 		  background-color: rgba(0,0,0,0.65);
 		}
 	.menu{
-		background-color: white;
+		background-color: #9ACD32;
 		position: fixed;
-		margin-top: 1.5em;
-		right: 10%;
-		float: right;
 		z-index: 50;
 		display: none;
+		width: 100%;
+		text-align: center;
+	}
+	.menu a{
+		color: #fff;
 	}
 
 	.navbar-inverse {
