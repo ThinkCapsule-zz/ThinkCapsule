@@ -419,8 +419,13 @@ body {
 
 	body{
 		background-image:none;
+		background-color: #000;		/*switch to black background for mobile*/
 	}
-
+	
+	.overlay{			/*remove overlay*/
+		display: none;
+		background-color: none;
+	}
 
 	.textbox h1, .textbox h3 {
 		font-size: 24px;
