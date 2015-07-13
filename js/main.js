@@ -55,18 +55,14 @@ $( window ).preLoad(function() {
 
 
 //*** For the job descriptions
-
-var careersText1 = $('.careersText1');
-var careersText2 = $('.careersText2');
-var careersText3 = $('.careersText3');
-
-// Refactor this, never repeat yourself
- 
-var applyWindow = $('#applyWindow'); // the application popup
-var jobDescSection = $('#hideAfterApply'); // the job descriptions
+/* WROTE A LOT OF MESSY CODE HERE = REFACTOR IF YOU HAVE TIME */
 
 function showCareersText1() {
-
+	var applyWindow = $('#applyWindow'); // the application popup
+	var jobDescSection = $('#hideAfterApply'); // the job descriptions
+	var careersText1 = $('.careersText1');
+	var careersText2 = $('.careersText2');
+	var careersText3 = $('.careersText3');
 	if (jobDescSection.is($('.hidden'))) {
 		closeApplyWindow();
 	}
@@ -79,7 +75,11 @@ function showCareersText1() {
 
 
 function showCareersText2() {
-
+	var applyWindow = $('#applyWindow'); // the application popup
+	var jobDescSection = $('#hideAfterApply'); // the job descriptions
+	var careersText1 = $('.careersText1');
+	var careersText2 = $('.careersText2');
+	var careersText3 = $('.careersText3');
 	if (jobDescSection.is($('.hidden'))) {
 		closeApplyWindow();
 	}
@@ -89,7 +89,11 @@ function showCareersText2() {
 }
 
 function showCareersText3() {
-	
+	var careersText1 = $('.careersText1');
+	var careersText2 = $('.careersText2');
+	var careersText3 = $('.careersText3');
+	var applyWindow = $('#applyWindow'); // the application popup
+	var jobDescSection = $('#hideAfterApply'); // the job descriptions
 	if (jobDescSection.is($('.hidden'))) {
 		closeApplyWindow();
 	}
@@ -101,14 +105,16 @@ function showCareersText3() {
 
 //*** For opening the applyWindow 
 
-
-
 function openApplyWindow() {
+	var applyWindow = $('#applyWindow'); // the application popup
+	var jobDescSection = $('#hideAfterApply'); // the job descriptions
 	applyWindow.removeClass('hidden');
 	jobDescSection.addClass('hidden');
 }
 
 function closeApplyWindow() {
+	var applyWindow = $('#applyWindow'); // the application popup
+	var jobDescSection = $('#hideAfterApply'); // the job descriptions
 	applyWindow.addClass('hidden');
 	jobDescSection.removeClass('hidden');
 }
