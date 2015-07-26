@@ -28,7 +28,7 @@ $('.menu .page-scroll').on('click',function(event){
 });
 
 function showBurger(){
-	if (window.innerWidth < 750) {
+	if ((/iPhone|iPod|iPad|Android|BlackBerry/).test(navigator.userAgent)) {
     	$('.nav .page-scroll').hide();
     	$('.hamburger').show();
 	}
