@@ -19,7 +19,7 @@ $('.page-scroll').hover(function() {
     $('a', $(this).closest('.page-scroll')).css('text-decoration', 'none');
 });
 
-//*** adding hambyrger button
+//*** adding hamburger button
 $('.hamburger').on('click',function(event){
 	showMenu();
 });
@@ -64,7 +64,7 @@ function showCareersText1() {
 	var careersText2 = $('.careersText2');
 	var careersText3 = $('.careersText3');
 	if (jobDescSection.is($('.hidden'))) {
-		closeApplyWindow();
+		closeTempApplyWindow();				//TODO: change back to "closeApplyWindow();" after setting up email
 	}
 
 	careersText2.addClass('hidden');
@@ -81,7 +81,7 @@ function showCareersText2() {
 	var careersText2 = $('.careersText2');
 	var careersText3 = $('.careersText3');
 	if (jobDescSection.is($('.hidden'))) {
-		closeApplyWindow();
+		closeTempApplyWindow();				//TODO: change back to "closeApplyWindow();" after setting up email
 	}
 	careersText3.addClass('hidden');
 	careersText1.addClass('hidden');
@@ -95,7 +95,7 @@ function showCareersText3() {
 	var applyWindow = $('#applyWindow'); // the application popup
 	var jobDescSection = $('#hideAfterApply'); // the job descriptions
 	if (jobDescSection.is($('.hidden'))) {
-		closeApplyWindow();
+		closeTempApplyWindow();				//TODO: change back to "closeApplyWindow();" after setting up email
 	}
 
 	careersText2.addClass('hidden');
@@ -116,5 +116,22 @@ function closeApplyWindow() {
 	var applyWindow = $('#applyWindow'); // the application popup
 	var jobDescSection = $('#hideAfterApply'); // the job descriptions
 	applyWindow.addClass('hidden');
+	jobDescSection.removeClass('hidden');
+}
+
+
+//For opening the tempApplyWindow until email settings are set up
+//TODO: delete tempApplyWindow after email is set up
+function openTempApplyWindow() {
+	var tempApplyWindow = $('#tempApplyWindow'); // the application popup
+	var jobDescSection = $('#hideAfterApply'); // the job descriptions
+	tempApplyWindow.removeClass('hidden');
+	jobDescSection.addClass('hidden');
+}
+
+function closeTempApplyWindow() {
+	var tempApplyWindow = $('#tempApplyWindow'); // the application popup
+	var jobDescSection = $('#hideAfterApply'); // the job descriptions
+	tempApplyWindow.addClass('hidden');
 	jobDescSection.removeClass('hidden');
 }
