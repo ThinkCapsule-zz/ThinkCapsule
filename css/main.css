@@ -1,10 +1,8 @@
-/*hello*/
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-   /*hamburg button: http://czero-solutions.com/wp-content/themes/czero/img/hamburgermenu.png*/
+   /*hamburger button: http://czero-solutions.com/wp-content/themes/czero/img/hamburgermenu.png*/
 
 html, body, p, h1, h2, h3, h4 {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -43,7 +41,6 @@ body {
 		display: none;
 	}
 
-
 	.overlay {
 		  position: fixed;
 		  top: 0;
@@ -53,6 +50,7 @@ body {
 		  z-index: 10;
 		  background-color: rgba(0,0,0,0.65);
 		}
+
 	.menu{
 		background-color: #9ACD32;
 		position: fixed;
@@ -61,12 +59,15 @@ body {
 		width: 100%;
 		text-align: center;
 	}
+
 	.menu a{
 		color: #fff;
 	}
+
 	#hamMenu {
 		padding: .5em;
 	}
+
 	.navbar-inverse {
 		background-color: #9ACD32;
 		color: #fff;
@@ -84,8 +85,6 @@ body {
 		/*padding-bottom: 3em;*/
 		margin-bottom: 1em;
 		margin-top: 0;
-
-		
 	}
 
 	.logo2 {
@@ -115,6 +114,7 @@ body {
 		font-size: 80px;
 		font-weight: bold;
 	}
+
 	.textbox h3 {
 		font-size: 70px;
 	}
@@ -129,14 +129,10 @@ body {
 	}
 
 	#landing {
-		
-		
 		height: 100%;
 	}
 
-
 	#about {
-		
 		width: 100%;
 		height: 100%;
 	}
@@ -170,9 +166,11 @@ body {
 		text-align: center;
 		color: #fff;
 	}
+
 	.info h1{
 		font-size: 60px;
 	}
+
 	.info p{
 		font-size: 30px;
 		text-align: left;
@@ -186,6 +184,7 @@ body {
 		height: 60%;
 		width: 60%;
 	}
+
 	.work p{
 		margin-left: 0px;
 		margin-right: 0px;
@@ -206,6 +205,8 @@ body {
 
 	  transition: color .3s;
 	  text-align: center;
+	  font-size: 14px;
+	  font-weight: bolder;
 	  color: #fff;
 	}
 
@@ -262,10 +263,34 @@ body {
 		color: #333;
 	}
 
-	ul
-	{
+	ul{
 	    list-style-type: none;
 	}
+
+	.careers{
+		padding-top: 1em;
+		font-size: 1.2em;
+	}
+
+	.careers h2{
+		font-size: 3em;
+	}
+
+	.careers li{
+		text-align: left;
+		padding-bottom: 0.3em;
+	}
+
+	.careers p{
+		font-size: 1em;
+	}
+
+	#tempApplyWindow{
+		margin-left: none;
+		text-align: left;
+		font-size: 1.7em;
+	}
+
 	.no-anchor a {
 		color: inherit;
 	}
