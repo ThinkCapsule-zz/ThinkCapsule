@@ -4,9 +4,32 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 10;
+          background-color: rgba(0,0,0,0.65);
+        }
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    padding-top: 50px;
+    padding-bottom: 20px;
+        
+    background-position:center center;
+    background-image: url('https://cloud.githubusercontent.com/assets/9067177/8275619/6752d6c6-1877-11e5-98aa-01e4006507c0.jpg'); 
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
 }
 
 .text-muted {
@@ -51,7 +74,6 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -174,7 +196,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand {             /*TODO: insert ThinkCapsule logo here*/
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #fed136;
 }
@@ -213,28 +235,30 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:focus {               /*when mouse hovers over menu btn*/
     outline: 0;
-    color: #fed136;
+    color: #fff;
+    text-decoration: underline;
 }
 
-.navbar-default .navbar-nav>.active>a {
+.navbar-default .navbar-nav>.active>a {         /*when the section is active*/
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    background-color: #6DAE0B;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    background-color: #6DAE0B;
+    text-decoration: none;
 }
 
 @media(min-width:768px) {
-    .navbar-default {
-        padding: 25px 0;
+    .navbar-default {                   /*on landing page*/
+        padding: 5px;
         border: 0;
-        background-color: transparent;
+        background-color: #9ACD32;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -252,8 +276,8 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #222;
+        padding: 5px;
+        background-color: #9ACD32;          /*colour of navbar*/
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -265,7 +289,6 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -298,7 +321,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 170px;
         padding-bottom: 200px;
     }
 
