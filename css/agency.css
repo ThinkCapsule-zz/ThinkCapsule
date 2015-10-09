@@ -4,16 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-.overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          z-index: 10;
-          background-color: rgba(0,0,0,0.65);
-        }
-
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -32,8 +22,14 @@ body {
     height: 100%;
 }
 
-.text-muted {
-    color: #777;
+.overlay {                  /*overlay over background image*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.65);
 }
 
 .text-primary {
@@ -80,14 +76,6 @@ h6 {
 
 .img-centered {
     margin: 0 auto;
-}
-
-.bg-light-gray {
-    background-color: #f7f7f7;
-}
-
-.bg-darkest-gray {
-    background-color: #222;
 }
 
 .btn-primary {
@@ -194,18 +182,27 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+    webkit-box-shadow: 0 1px 10px #000;
+        box-shadow: 0 1px 10px #000;
 }
 
 .navbar-default .navbar-brand {             /*TODO: insert ThinkCapsule logo here*/
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    height: 50px;
+    color: #fff;
 }
+
+#logo {
+        height: 50px;
+        /*padding-bottom: 3em;*/
+        margin-bottom: 1em;
+        margin-top: 0;
+    }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #fff;
 }
 
 .navbar-default .navbar-collapse {
@@ -670,17 +667,14 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
-    margin: 50px auto;
-}
-
+/* PLACES MAP IMAGE BEHIND CONTACT SECTION
 section#contact {
     background-color: #222;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
-
+*/
 section#contact .section-heading {
     color: #fff;
 }
@@ -887,4 +881,38 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+.greenbox{
+    background-color: #9ACD32;
+    color: #fff;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: -7em;
+}
+
+.greenbox p{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#work img{
+    max-width: 300px;
+    max-height: 300px;
+    height: 60%;
+    width: 60%;
+
+}
+
+#work p{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#team{
+    background-color: #fff;
 }
