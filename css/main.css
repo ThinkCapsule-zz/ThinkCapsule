@@ -1,8 +1,8 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   /*hamburger button: http://czero-solutions.com/wp-content/themes/czero/img/hamburgermenu.png*/
 
 html, body, p, h1, h2, h3, h4 {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -23,9 +23,23 @@ body {
 	    -o-background-size: cover;
 	    background-size: cover;
 	    height: 100%;
+
+	    overflow-x: hidden;
         
 	  	}
+	  	
+	.phone{
+		width: 50%;
+		height:50%;
+		font-size:50%;
+	}
 
+	.hamburger{
+		position: relative;
+		float: right;
+		margin-top: 1em;
+		display: none;
+	}
 
 	.overlay {
 		  position: fixed;
@@ -37,18 +51,38 @@ body {
 		  background-color: rgba(0,0,0,0.65);
 		}
 
+	.menu{
+		background-color: #9ACD32;
+		position: fixed;
+		z-index: 50;
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.menu a{
+		color: #fff;
+	}
+
+	#hamMenu {
+		padding: .5em;
+	}
+
 	.navbar-inverse {
 		background-color: #9ACD32;
 		color: #fff;
-		padding: .8em;
-		webkit-box-shadow: 0 1px 3px #888888;
-		box-shadow: 0 1px 3px #888888;
+		padding: 0em;			/*esther's edit: changed padding to centre text in navbar*/
+		webkit-box-shadow: 0 1px 10px #000;
+		box-shadow: 0 1px 10px #000;
 		margin-bottom: 600px;
+		border-bottom: none;
+		max-height: 45px;
+		font-size: 18px;
 	}
 
 	#logo {
-		height: 100px;
-		padding-bottom: 3em;
+		height: 50px;
+		/*padding-bottom: 3em;*/
 		margin-bottom: 1em;
 		margin-top: 0;
 	}
@@ -69,10 +103,20 @@ body {
 	}
 	
 	.textbox {
-		margin-top: 5em;
+		margin-top: 17em;
+		margin-bottom: 5em;
 		text-align: center;
 		/*changed color to white */
 		color: #fff;
+	}
+
+	.textbox h1 {
+		font-size: 80px;
+		font-weight: bold;
+	}
+
+	.textbox h3 {
+		font-size: 70px;
 	}
 
 	section {
@@ -85,14 +129,10 @@ body {
 	}
 
 	#landing {
-		
-		background:rgba(0,0,0,0.6);
 		height: 100%;
 	}
 
-
 	#about {
-		
 		width: 100%;
 		height: 100%;
 	}
@@ -104,7 +144,7 @@ body {
 	
 	#map_canvas {
         height:20em;
-        width: 1126px;
+        width: 100%;
 		margin: 0;
      }
 
@@ -113,12 +153,12 @@ body {
 		text-align: center;
 		color: #fff;
         height:20em;
-		width: 564px;
+		width: 100%;
 	}
 
 	
 	.info{
-		margin-top: 200px;
+		margin-top: 150px;
 		margin-bottom: 600px;
 		padding-top: 3em;
 		padding-bottom: 3em;
@@ -126,9 +166,11 @@ body {
 		text-align: center;
 		color: #fff;
 	}
+
 	.info h1{
 		font-size: 60px;
 	}
+
 	.info p{
 		font-size: 30px;
 		text-align: left;
@@ -142,6 +184,7 @@ body {
 		height: 60%;
 		width: 60%;
 	}
+
 	.work p{
 		margin-left: 0px;
 		margin-right: 0px;
@@ -162,6 +205,8 @@ body {
 
 	  transition: color .3s;
 	  text-align: center;
+	  font-size: 14px;
+	  font-weight: bolder;
 	  color: #fff;
 	}
 
@@ -193,7 +238,7 @@ body {
 	}
 
 	.teaminfo{
-		margin-top: 200px;
+		margin-top: 20px;
 		background-color: #fff;
 	}
 
@@ -218,10 +263,34 @@ body {
 		color: #333;
 	}
 
-	ul
-	{
+	ul{
 	    list-style-type: none;
 	}
+
+	.careers{
+		padding-top: 1em;
+		font-size: 1.2em;
+	}
+
+	.careers h2{
+		font-size: 3em;
+	}
+
+	.careers li{
+		text-align: left;
+		padding-bottom: 0.3em;
+	}
+
+	.careers p{
+		font-size: 1em;
+	}
+
+	#tempApplyWindow{
+		margin-left: none;
+		text-align: left;
+		font-size: 1.7em;
+	}
+
 	.no-anchor a {
 		color: inherit;
 	}
@@ -238,6 +307,15 @@ body {
 	.big-bottom {
 		padding-bottom: 5em;
 	}
+	
+	#fileBtn {
+		display: inline;
+	}
+
+	input {
+		margin-top: 1em;
+		color: #333;
+	}
 
 /****  Laptop size ****/
 
@@ -245,7 +323,7 @@ body {
 
 	#map_canvas {
         height:20em;
-        width: 1366px;
+        width: 100%;
 		margin: 0;
      }
 
@@ -260,7 +338,6 @@ body {
 	.smallSizeDescription {
 		display: none;
 	}
-
 
 }
 
@@ -316,6 +393,7 @@ body {
 
 @media (max-width: 720px) {
 
+
 	#map_canvas {
         height:20em;
         width: 100%;
@@ -341,23 +419,67 @@ body {
 		display: none;
 	}
 
+	.textbox h1, .textbox h3 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.info h1,h2,h3,h4 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.info p {
+		font-size: 24px;
+		margin-left: 0;
+		margin-right: 0;
+		text-align: center;
+	}
+
 }
 
 /****  Mobile size ****/
 
 @media (max-width: 360px) {
 
+	body{
+		background-image:none;
+		background-color: #000;		/*switch to black background for mobile*/
+	}
+	
+	.overlay{			/*remove overlay*/
+		display: none;
+		background-color: none;
+	}
+
+	.textbox h1, .textbox h3 {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.info h1,h2,h3,h4 {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.info p {
+		font-size: 20px;
+		margin-left: 0;
+		margin-right: 0;
+		text-align: center;
+	}
+
 	#map_canvas {
-	    height:10em;
-        width: 100%;
+		height:20em;
+        	width: 100%;
 		margin: 0;
-     }
+     	}
 
 	.greenbox {
 		background-color: #9ACD32;
 		text-align: center;
 		color: #fff;
-        height:100%;
+        	height:100%;
 		width: 100%;
 	}
 
@@ -365,5 +487,8 @@ body {
 		padding-right: 4em;
 	}
 
+	.big-bottom {
+		padding-bottom: 2em;
+	}
 }
 
