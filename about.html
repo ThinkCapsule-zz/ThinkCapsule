@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ThinkCapsule</title>
+    <link rel="icon" type="image/png" href="img/logo/title-bar-image.png" />
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://maps.googleapis.com/maps/api/js?v3.exp"></script>
+
+    <script type="text/javascript">
+              function initialize() {
+                var map;
+                  var latlng = new google.maps.LatLng(43.642471,-79.3756333);
+                  var myOptions = {
+                        scrollwheel: false,
+                        zoom: 12,
+                      center: latlng,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP,
+                      disableDefaultUI: true
+                  };
+                  map = new google.maps.Map(document.getElementById("map_canvas"),
+                          myOptions);
+                  var marker = new google.maps.Marker({
+                      position: latlng,
+                      map: map
+                  });
+              }
+              google.maps.event.addDomListener(window, "load", initialize);
+            </script>
+    </head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">ThinkCapsule Inc.</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>DARE TO DREAM, DARE TO ACHIEVE</h1>
+                <hr>
+                <a href="#about" class="page-scroll"><img src = "img/logo/thinkcapsule-logo-white-transparent.png"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About Us</h2>
+                    <hr class="light">
+                    <p class="text-faded">ThinkCapsule is a company that strives to bring creative ideas to life. We are founded on the principle that there are many answers to problems, though few are done the right way. We believe in providing endless opportunities and possibilities for the younger generation to try new things. We are risk takers who combine insight and calculated decisions in every step we take. We are led by a management team who comes from passionate and diverse backgrounds of analytics, design and science.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://kapacino.com" class="portfolio-box">
+                        <img src="img/portfolio/kapacino-stock-light.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Connecting Students
+                                </div>
+                                <div class="project-name">
+                                    Kapacino
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://www.youtube.com/channel/UC5KXrT77_t-pI3LRlcNEoTA" class="portfolio-box">
+                        <img src= "img/portfolio/expose.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Creating Films
+                                </div>
+                                <div class="project-name">
+                                    Exposé
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://www.thinkcapsule.com/bts" class="portfolio-box">
+                        <img src="img/portfolio/bts.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    ThinkCapsule Blog
+                                </div>
+                                <div class="project-name">
+                                    Behind the Scenes
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Team</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/anthony.png" width="160">
+                        <h3>Anthony Kong</h3>
+                        <p class="text-muted">Founder, CEO. Loves Analytics</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/julian.png" width="160">
+                        <h3>Julian Haw</h3>
+                        <p class="text-muted">CFO. Loves Food</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/derek.png" width="160">
+                        <h3>Derek Kiang</h3>
+                        <p class="text-muted">CMO. Loves Ads</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/greg.png" width="160">
+                        <h3>Gregor Moss</h3>
+                        <p class="text-muted">CCO, Behind the camera</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/alan.png" width="160">
+                        <h3>Alan Hsu</h3>
+                        <p class="text-muted">CTO, All things Engineering</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/suzanne.png" width="160">
+                        <h3>Suzanne Fu</h3>
+                        <p class="text-muted">Resources. Building the team</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/abigail.png" width="160">
+                        <h3>Abigail Tung</h3>
+                        <p class="text-muted">Storyteller. Sharing her views</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/bill.png" width="160">
+                        <h3>Bill Zhao</h3>
+                        <p class="text-muted">You have to make your websites wit</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/selin.png" width="160">
+                        <h3>Selin Acar</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/michael.png" width="160">
+                        <h3>Michael Ding</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/alysha.png" width="160">
+                        <h3>Alysha Wei</h3>
+                        <p class="text-muted">UX Designer. Loves Cheese</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/people/esther.png" width="160">
+                        <h3>Esther Kim</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="map_canvas">
+    </div>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <hr class="primary">
+                    <p>33 University Ave, Toronto, ON, Canada, M5J 2S7</p>
+                    <br>
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:support@thinkcapsule.com">support@thinkcapsule.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
